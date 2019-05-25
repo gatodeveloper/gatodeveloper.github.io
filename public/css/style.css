@@ -14399,14 +14399,13 @@ header#main-header .description .inner-box {
   margin: auto;
 }
 
-footer {
-  background-color: #12141B;
+footer#main-footer {
   text-align: center;
 }
-footer span {
+footer#main-footer span {
   display: block;
   color: #fff;
-  padding: 1em;
+  padding: 3em 1em 2em;
 }
 
 #main-sidebar {
@@ -14540,9 +14539,6 @@ footer span {
   margin: 0;
   padding: 0;
   opacity: 0.8;
-}
-#content #skills {
-  padding: 0 0 3em;
 }
 #content #skills .__info {
   padding: 5%;
