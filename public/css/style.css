@@ -14546,13 +14546,15 @@ footer#main-footer span {
 #content #skills .__tech ul.tags {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 2em 0;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
 }
 #content #skills .__tech ul.tags li {
   text-align: center;
-  padding: 1em;
+  padding: 0.7em;
 }
 #content #skills article {
   padding-bottom: 1em;
