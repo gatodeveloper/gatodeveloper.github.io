@@ -14523,6 +14523,9 @@ footer span {
   padding: 5%;
   font-size: 1.2em;
 }
+#content #about .__description blockquote {
+  padding: 2em 5%;
+}
 #content #about .__description blockquote a {
   color: #2b95ff;
 }
