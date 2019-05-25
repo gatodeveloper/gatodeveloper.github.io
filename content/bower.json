@@ -1,0 +1,20 @@
+{
+  "name": "gatodeveloper",
+  "version": "0.0.0",
+  "authors": [
+    "Diego Santiesteban <gatodeveloper@gmail.com>"
+  ],
+  "description": "Gatodeveloper",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "heygrid": "*",
+    "normalize-css": "~3.0.3"
+  }
+}

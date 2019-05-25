@@ -1,0 +1,26 @@
+{
+  "name": "gatodeveloper",
+  "version": "1.0.0",
+  "description": "Diego Santiesteban portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gatodeveloper/gatodeveloper.git"
+  },
+  "keywords": [
+    "Portfolio",
+    "Developer"
+  ],
+  "author": "Diego Santiesteban",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gatodeveloper/gatodeveloper/issues"
+  },
+  "homepage": "https://github.com/gatodeveloper/gatodeveloper#readme",
+  "dependencies": {
+    "hagrid.io": "0.0.8"
+  }
+}

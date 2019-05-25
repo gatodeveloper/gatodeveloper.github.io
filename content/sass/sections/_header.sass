@@ -1,0 +1,118 @@
+body
+  //background: #131416
+  background-color: #262728
+  font-size: 1em
+  font-family: 'Open Sans', sans-serif
+  font-weight: 100
+  color: #eee
+  
+
+h1,
+h2,
+h3
+  margin: 0
+  padding: 0
+  font-weight: 100
+
+h1
+  font-size: 5em
+
+h2
+  text-align: center
+  font-size: 5em
+  font-weight: 100
+  letter-spacing: -5px
+
+  @media screen and (max-width: 400px)
+    font-size: 3em
+
+h3
+  text-align: center
+  font-size: 5em
+
+h4
+  font-size: 2em
+
+blockquote
+  text-align: center
+  font-size: 1.7em
+  display: block
+  margin: 0
+  padding: 2em 1em
+
+  a
+    color: inherit
+    text-decoration: none
+
+    &:hover
+      text-decoration: underline
+
+
+header#main-header
+  text-align: center
+
+  figure
+    margin: 0
+    
+    @media screen and (min-width: 660px) and (max-width: 1200px)
+      +inline-block
+      vertical-align: top
+      width: 50%
+
+    /*&:before
+      content: ''
+      position: absolute
+      left: 50%
+      top: 0
+      max-width: 640px
+      height: 477px
+      margin-left: -320px
+      background: -moz-linear-gradient(top, rgba(153,153,153,0) 0%, rgba(0,0,0,1) 100%)
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(153,153,153,0)), color-stop(100%,rgba(0,0,0,1)))
+      background: -webkit-linear-gradient(top, rgba(153,153,153,0) 0%,rgba(0,0,0,1) 100%)
+      background: -o-linear-gradient(top, rgba(153,153,153,0) 0%,rgba(0,0,0,1) 100%)
+      background: -ms-linear-gradient(top, rgba(153,153,153,0) 0%,rgba(0,0,0,1) 100%)
+      background: linear-gradient(to bottom, rgba(153,153,153,0) 0%,rgba(0,0,0,1) 100%)
+      z-index: 10
+      -webkit-clip-path: polygon(50% 0, 100% 0, 50% 100%, 0 0)
+      clip-path: polygon(50% 0, 100% 0, 50% 100%, 0 0)*/
+
+
+    img
+      -webkit-clip-path: polygon(50% 0, 100% 0, 50% 100%, 0 0)
+      clip-path: polygon(50% 0, 100% 0, 50% 100%, 0 0)
+      max-width: 100%
+
+      @media screen and (max-width: 1200px)
+        width: 90%
+
+  .description
+    bottom: 0
+    width: 100%
+    position: absolute
+
+    .grid-box
+      vertical-align: middle
+
+    @media screen and (min-width: 860px) and (max-width: 1200px)
+      top: 0
+
+      +inline-block
+      vertical-align: top
+      width: 50%
+      font-size: .8em
+
+    @media screen and (max-width: 860px)
+      top: 0
+      font-size: .7em
+    
+    .grid-box
+      @media screen and (max-width: 1200px)
+        width: 100%
+
+    .inner-box
+      max-width: 360px
+      margin: auto
+      //padding: 0 10em
+
+
