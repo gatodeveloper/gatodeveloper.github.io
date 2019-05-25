@@ -14410,17 +14410,21 @@ footer span {
 }
 
 #main-sidebar {
-  flex: 0 0 80px;
-  background-color: #181818;
+  flex: 0 0 60px;
+  z-index: 2;
 }
 #main-sidebar .main-sidebar-inner {
-  width: 80px;
+  width: 60px;
   height: 100%;
+  background-color: #1b1b1b;
   position: fixed;
 }
 #main-sidebar .logo img {
   display: block;
-  max-width: 100%;
+  max-width: 60px;
+}
+#main-sidebar .main-menu {
+  background: #131416;
 }
 #main-sidebar .main-menu a {
   display: block;
@@ -14428,6 +14432,10 @@ footer span {
   text-align: center;
   text-decoration: none;
   padding: 1em 0;
+  transition: background 0.3s;
+}
+#main-sidebar .main-menu a:hover, #main-sidebar .main-menu a:active {
+  background: #2b2d31;
 }
 #main-sidebar .social-networks {
   list-style: none;
@@ -14435,19 +14443,55 @@ footer span {
   padding: 0 0 1em;
 }
 #main-sidebar .social-networks a {
-  display: block;
-  padding: 0.5em 0;
+  display: inline-block;
   text-decoration: none;
   font-size: 1.5em;
   color: #ccc;
+  height: 60px;
+  width: 60px;
+  line-height: 60px;
+  text-align: center;
+  transition: background 0.3s;
+}
+#main-sidebar .social-networks a:hover {
+  background-color: #131416;
+}
+@media screen and (max-width: 460px) {
+  #main-sidebar {
+    flex: auto;
+    height: 60px;
+  }
+  #main-sidebar .main-sidebar-inner {
+    width: 100%;
+    height: 60px;
+  }
+  #main-sidebar .main-sidebar-inner .lay-socials .social-networks {
+    padding: 0;
+  }
+  #main-sidebar .main-sidebar-inner .gs {
+    flex-direction: row;
+  }
+  #main-sidebar .main-sidebar-inner .gs .lay {
+    width: auto;
+  }
 }
 
+#content {
+  z-index: 1;
+}
 #content > section {
   height: 100vh;
   overflow: hidden;
 }
+@media screen and (max-width: 940px) {
+  #content > section {
+    height: auto;
+    overflow: auto;
+  }
+}
 #content #hello {
-  padding: 3em;
+  padding: 5%;
+  height: 100vh;
 }
 #content #hello figure {
   background-size: cover;
@@ -14468,20 +14512,21 @@ footer span {
   display: block;
 }
 #content #hello h1 b {
-  font-size: 40vh;
+  font-size: 25vw;
   font-family: "Pacifico", cursive;
   font-weight: 100;
 }
 #content #hello h1 span {
-  font-size: 10vh;
+  font-size: 6vw;
 }
 #content #about .__description {
-  padding: 3em;
+  padding: 5%;
   font-size: 1.2em;
 }
 #content #about .__photo {
   width: 100%;
   height: 100%;
+  min-height: 360px;
   background: url("../img/diego-santiesteban.jpg");
   box-shadow: 0 0 100px black inset;
   background-size: cover;
@@ -14490,8 +14535,11 @@ footer span {
   padding: 0;
   opacity: 0.8;
 }
+#content #skills {
+  padding: 0 0 3em;
+}
 #content #skills .__info {
-  padding: 3em;
+  padding: 5%;
 }
 #content #skills .__tech ul.tags {
   list-style: none;
